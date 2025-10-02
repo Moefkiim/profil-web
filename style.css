@@ -1,0 +1,77 @@
+body {
+  font-family: 'Rubik', Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f7f7f7;
+}
+#header {
+  background-color: #2a5298;
+  color: #fff;
+  padding: 32px 0 24px 0;
+  text-align: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 900px;
+  margin: 32px auto;
+  gap: 32px;
+}
+.profil {
+  width: 320px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  text-align: center;
+  padding: 32px 24px 24px 24px;
+}
+.profil img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 16px;
+  border: 4px solid #2a5298;
+}
+.galeri {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.galeri > h2 {
+  flex-basis: 100%;
+  text-align: center;
+  width: 100%;
+}
+.kartu-aktivitas {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 24px 16px;
+  width: 220px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  transition: box-shadow 0.2s, border-color 0.2s;
+  margin-bottom: 16px;
+}
+.kartu-aktivitas:hover {
+  box-shadow: 0 6px 24px rgba(42,82,152,0.18);
+  border-color: #2a5298;
+}
+@media (max-width: 700px) {
+  .container {
+    padding: 0 8px;
+  }
+  .galeri {
+    flex-direction: column;
+    align-items: center;
+  }
+  .kartu-aktivitas {
+    width: 90%;
+    max-width: 340px;
+  }
+}
